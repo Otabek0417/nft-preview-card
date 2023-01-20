@@ -1,0 +1,206 @@
+/* outfit-300 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/outfit-v6-latin-300.woff2") format("woff2"), url("../fonts/outfit-v6-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("../fonts/outfit-v6-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/outfit-v6-latin-600.woff2") format("woff2"), url("../fonts/outfit-v6-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0d192c;
+  font-family: "Outfit";
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-btn {
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  color: #fff;
+  line-height: 2;
+  padding: 0.8rem 3.6rem 0.8rem 3.3rem;
+}
+
+.hero__list {
+  width: 100%;
+  max-width: 350px;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__item {
+  padding: 2.4rem 2.4rem 3.9rem 2.4rem;
+}
+.hero__item h4 {
+  margin-top: 2.4rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.hero__item h4:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+.hero__box {
+  position: relative;
+}
+.hero__box:hover::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  background: #00fff8;
+  opacity: 0.5;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.hero__box:hover::before {
+  display: block;
+  content: url("../../images/Shape.svg");
+  position: absolute;
+  top: 13.5rem;
+  left: 13rem;
+  color: #ffffff;
+  z-index: 1;
+}
+.hero__box::before {
+  display: none;
+  content: url("../../images/Shape.svg");
+  position: absolute;
+  top: 16rem;
+  left: 15rem;
+  color: #ffffff;
+}
+.hero__desc {
+  margin-top: 1.6rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #8bacd9;
+}
+.hero__Wrapper {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+.hero__Wrapper-title1 {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.hero__Wrapper-title1 img {
+  margin-right: 6px;
+}
+.hero__Wrapper-title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__Wrapper-title2 img {
+  margin-right: 9px;
+}
+.hero__Wrapper__desc1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #00fff8;
+}
+.hero__Wrapper__desc2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #8bacd9;
+}
+.hero__line {
+  border: none;
+  margin-top: 2.4rem;
+  border-bottom: 1px solid #2e405a;
+}
+.hero__Wrapper2 {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero__Wrapper2 img {
+  margin-right: 1.6rem;
+}
+.hero__Wrapper2__desc1 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #8bacd9;
+}
+.hero__Wrapper2__desc1:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+.hero__Wrapper2__desc2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.hero__Wrapper2__desc2:hover {
+  color: #00fff8;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

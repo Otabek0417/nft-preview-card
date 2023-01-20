@@ -1,0 +1,134 @@
+.hero {
+  &__list {
+    width: 100%;
+    max-width: 350px;
+    background: #15263f;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    padding: 2.4rem 2.4rem 3.9rem 2.4rem;
+    h4 {
+      margin-top: 2.4rem;
+      @include font(600, 2.2rem, 2.8rem, #ffffff);
+      transition: all 0.3s;
+    }
+    h4:hover {
+      color: #00fff8;
+      cursor: pointer;
+    }
+  }
+
+  &__box {
+    position: relative;
+    &:hover {
+      &::after {
+        position: absolute;
+        top: 0;
+        content: "";
+        background: #00fff8;
+        opacity: 0.5;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:hover {
+      &::before {
+        display: block;
+        content: url("../../images/Shape.svg");
+        position: absolute;
+        top: 13.5rem;
+        left: 13rem;
+        color: #ffffff;
+        z-index: 1;
+      }
+    }
+
+    &::before {
+      display: none;
+      content: url("../../images/Shape.svg");
+      position: absolute;
+      top: 16rem;
+      left: 15rem;
+      color: #ffffff;
+    }
+  }
+  &__desc {
+    margin-top: 1.6rem;
+    @include font(300, 1.8rem, 2.6rem, #8bacd9);
+  }
+
+  &__Wrapper {
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__Wrapper-title1 {
+    img {
+      margin-right: 6px;
+    }
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  &__Wrapper-title2 {
+    img {
+      margin-right: 9px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__Wrapper__desc1 {
+    @include font(600, 1.6rem, 2rem, #00fff8);
+  }
+
+  &__Wrapper__desc2 {
+    @include font(400, 1.6rem, 2rem, #8bacd9);
+  }
+
+  &__line {
+    border: none;
+    margin-top: 2.4rem;
+    border-bottom: 1px solid #2e405a;
+    // background: #2e405a;
+  }
+
+  &__Wrapper2 {
+    margin-top: 2.2rem;
+    img {
+      margin-right: 1.6rem;
+    }
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__desc1 {
+      @include font(400, 1.6rem, 2rem, #8bacd9);
+    }
+    &__desc1:hover {
+      color: #00fff8;
+      cursor: pointer;
+    }
+
+    &__desc2 {
+      @include font(400, 1.6rem, 2rem, #ffffff);
+      transition: all 0.3s;
+    }
+    &__desc2:hover {
+      color: #00fff8;
+      cursor: pointer;
+    }
+  }
+}
